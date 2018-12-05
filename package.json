@@ -1,0 +1,27 @@
+{
+  "name": "tr_app",
+  "version": "1.0.0",
+  "description": "tr_app",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevE11/tr_app.git"
+  },
+  "keywords": [
+    "app",
+    "node",
+    "envoirment"
+  ],
+  "author": "Roger Esteve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estevE11/tr_app/issues"
+  },
+  "homepage": "https://github.com/estevE11/tr_app#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

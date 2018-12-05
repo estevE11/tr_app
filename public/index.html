@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ambiental Stats</title>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- NOT ON MOBILE PLS :D -->
+	<script type="text/javascript" src="http://livejs.com/live.js"></script>
+	
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+	<!-- Add additional services that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+	<!-- END OF Firebase -->
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- END OF Bootrstrap -->
+	
+	<!-- FOR MOBILE <script src="js/main.js"></script> --> 
+	<script src="public/js/main.js"></script>
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Dades mediambientals</h1>
+			<p>Web/Aplicació mobil creada per visualitzar les dades mediambientals i atmosferiques obtingudes amb una estació meteorologia creada amb Arduino.</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-header">Temperatura</div>
+					<div class="card-body">
+						<span id="temp"></span> ºC
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-header">Nivell de CO2</div>
+					<div class="card-body">
+						<span id="ppm"></span> ppm
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-header">Humitat</div>
+					<div class="card-body">
+						<span id="hum"></span> g/m
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-header">Altura</div>
+					<div class="card-body">
+						<span id="height"></span> m
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-header">Pressió</div>
+					<div class="card-body">						
+						<span id="pres"></span> Pa
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
